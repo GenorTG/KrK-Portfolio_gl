@@ -25,6 +25,7 @@ const Header = () => {
             >
               <button 
                 type="button"
+                onClick={() => setHeaderVisible(false)}
                 className='outline-none w-full border-b-2 border-mainOrange py-2 hover:text-white hover:bg-mainBlue transition-all ease-in-out'
               >{project.name}</button>
             </Link>

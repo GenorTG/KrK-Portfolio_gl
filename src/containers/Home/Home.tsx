@@ -10,8 +10,8 @@ const Home = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className='text-white pt-[40px] h-full font-mono'>
-      <div className='flex justify-center items-center w-full h-full'>
+    <div className='text-white font-mono'>
+      <div className='flex justify-center items-center'>
         {pathname === '/'
           ? (
             <Card 

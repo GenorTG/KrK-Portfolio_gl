@@ -18,7 +18,7 @@ interface CardProps {
 const Card = ({ head, subhead, texts, links, img }: CardProps) => {
 
   return (
-    <div className="flex justify-center items-center flex-col text-center">
+    <div className="flex justify-center items-center flex-col text-center max-h-90svh">
       {img && (
         <img src={img} alt="img" className="relative size-20 -top-2 rounded-full hover:animate-spin transition-all ease-in-out"/>
       )}
