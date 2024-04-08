@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { Redirects } from '../../data/data.ts';
 
-const headerCLasses = 'bg-gray-100 absolute h-auto left-0 right-0 flex transition-all ease-in-out delay-50 rounded-b-2xl flex-col';
+const headerCLasses = 'z-50 bg-gray-100 absolute h-auto left-0 right-0 flex transition-all ease-in-out delay-50 rounded-b-2xl flex-col';
 const headerHiddenClasses = `${headerCLasses} -translate-y-3/4`;
 const headerShownClasses = `${headerCLasses} translate-y-0`;
 

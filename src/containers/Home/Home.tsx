@@ -10,7 +10,7 @@ const Home = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className='bg-gradient text-white pt-[40px] h-svh font-mono'>
+    <div className='text-white pt-[40px] h-full font-mono'>
       <div className='flex justify-center items-center w-full h-full'>
         {pathname === '/'
           ? (

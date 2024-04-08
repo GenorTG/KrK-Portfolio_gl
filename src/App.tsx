@@ -10,15 +10,17 @@ const App = () => {
   // const navigate = useNavigate();
 
   return (
-    <div>
+    <div className='bg-gradient h-full '>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="/project/gpt3" element={<Gpt3 />} />
-          <Route path="/project/petpins" element={<PetPins />} />
-        </Route>
-      </Routes>
-      <Footer />
+      <div className='h-svh min-h-fit flex flex-col justify-between '>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route path="/project/gpt3" element={<Gpt3 />} />
+            <Route path="/project/petpins" element={<PetPins />} />
+          </Route>
+        </Routes>
+        <Footer />
+      </div>
     </div>
   );
 };
