@@ -1,0 +1,54 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100svw;
+  height: 100svh;
+  font-family: Noto Sans;
+  background-color: #000;
+}
+
+.loading__text {
+  max-width: 80svw;
+  max-height: 80svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.loading__text h1 {
+  font-size: 3rem;
+  color: #fff;
+  animation: waveAnim 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+.loading img {
+  filter: invert(100%);
+  margin-top: 2rem;
+  width: 25svw;
+}
+
+@keyframes waveAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .loading__text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .loading__text h1 {
+    font-size: 1.5rem;
+  }
+}
