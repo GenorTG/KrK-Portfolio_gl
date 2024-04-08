@@ -66,7 +66,7 @@ export const gpt3Details = {
       name: 'Website' 
     },
     {
-      link: 'https://github.com/GenorTG/KK-Portfolio-mgr/tree/main/PERSONAL-PROJECTS/GPT3-mockup-blog',
+      link: 'https://github.com/GenorTG/KrK-Portfolio_gl/tree/main/PERSONAL-PROJECTS/GPT3-mockup-blog',
       name: 'GitHub Repo' 
     },
   ]
@@ -93,7 +93,7 @@ export const PetPinsDetails = {
       name: 'Website' 
     },
     {
-      link: 'https://github.com/GenorTG/KK-Portfolio-mgr/tree/main/PERSONAL-PROJECTS/PetPins/petpins_frontend',
+      link: 'https://github.com/GenorTG/KrK-Portfolio_gl/tree/main/PERSONAL-PROJECTS/PetPins/petpins_frontend',
       name: 'GitHub Repo' 
     },
   ]
