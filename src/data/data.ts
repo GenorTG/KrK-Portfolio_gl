@@ -39,7 +39,7 @@ export const homeDetails = {
   ],
   links: [
     {
-      link: 'https://github.com/GenorTG/KK-Portfolio-mgr',
+      link: 'https://github.com/GenorTG/KrK-Portfolio_gl',
       name: 'GitHub Repo for this website.'
     }
   ]
