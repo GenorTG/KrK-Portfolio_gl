@@ -10,9 +10,9 @@ const App = () => {
   // const navigate = useNavigate();
 
   return (
-    <div className='bg-gradient h-svh '>
+    <div className='bg-gradient h-full min-h-svh'>
       <Header />
-      <div className='h-svh flex flex-col justify-between'>
+      <div className='h-full min-h-svh flex flex-col justify-between'>
         <div className='h-full my-40'>
           <Routes>
             <Route path="/" element={<Home />}>
@@ -21,7 +21,7 @@ const App = () => {
             </Route>
           </Routes>
         </div>
-        <div className=''>
+        <div className='relative bottom-0'>
           <Footer />
         </div>
       </div>
