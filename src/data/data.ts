@@ -1,10 +1,28 @@
 import codegif from '/assets/codegif.gif';
 import gpt3 from '/assets/gpt3.png';
 import DoggyLogo from '/assets/DoggyLogo.png';
+// import veedit from '/assets/veedit.svg';
 
 interface Redirect {
   name: string;
   page: string;
+}
+
+type Text = {
+  text: string;
+}
+
+type Links = {
+  link: string,
+  name: string,
+}
+
+type WebsiteProps = {
+  header: string,
+  subhead: string,
+  image: string,
+  texts: Text[],
+  links: Links[],
 }
 
 export const Redirects: Redirect[] = [
@@ -19,10 +37,14 @@ export const Redirects: Redirect[] = [
   {
     name: 'PetPins - a social media mockup site',
     page: '/project/PetPins'
+  },
+  {
+    name: 'VeedIt - A video conferencing app',
+    page: '/project/veedit'
   }
 ];
 
-export const homeDetails = {
+export const homeDetails: WebsiteProps = {
   header: 'Hi. I\'m Chris.',
   subhead: 'Welcome to my site.',
   image: codegif,
@@ -45,7 +67,7 @@ export const homeDetails = {
   ]
 };
 
-export const gpt3Details = {
+export const gpt3Details: WebsiteProps  = {
   header: 'GPT3 Blog',
   subhead: 'Front page',
   image: gpt3,
@@ -66,13 +88,13 @@ export const gpt3Details = {
       name: 'Website' 
     },
     {
-      link: 'https://github.com/GenorTG/KrK-Portfolio_gl/tree/main/PERSONAL-PROJECTS/GPT3-mockup-blog',
+      link: 'https://github.com/GenorTG/GPT3-mockup-blog',
       name: 'GitHub Repo' 
     },
   ]
 };
 
-export const PetPinsDetails = {
+export const PetPinsDetails: WebsiteProps  = {
   header: 'PetPins',
   subhead: 'A social media website',
   image: DoggyLogo,
@@ -93,9 +115,39 @@ export const PetPinsDetails = {
       name: 'Website' 
     },
     {
-      link: 'https://github.com/GenorTG/KrK-Portfolio_gl/tree/main/PERSONAL-PROJECTS/PetPins/petpins_frontend',
+      link: 'https://github.com/GenorTG/PetPins/tree/main/petpins_frontend',
       name: 'GitHub Repo' 
     },
   ]
   
+};
+
+export const veedItDetails: WebsiteProps  = {
+  header: 'VeedIt',
+  subhead: 'A video conferencing app',
+  image: '/assets/veedit.svg',
+  texts: [
+    {
+      text: 'This is a clone of "zoom", with basic video conferencing functionalities.'
+    },
+    {
+      text: 'The app is built using next JS. The sign in is done using Clerk, and the video conferencing runs on Stream\'s services.'
+    },
+    {
+      text: 'Currently the app allows you to setup instant calls, schedule calls in advance, check your schedule of calls, send call links to others, record calls and watch those recordings.'
+    },
+    {
+      text: 'Built using Typescript, Shadcn components library and Tailwind for styles.'
+    }
+  ],
+  links: [
+    {
+      link: 'https://veed-it.vercel.app/',
+      name: 'Website'
+    },
+    {
+      link: 'https://github.com/GenorTG/VeedIt',
+      name: 'Github Repo'
+    }
+  ]
 };

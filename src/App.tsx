@@ -4,6 +4,7 @@ import Home from './containers/Home/Home';
 import Footer from './components/footer/Footer';
 import Gpt3 from './containers/gpt3/Gpt3';
 import PetPins from './containers/PetPins/PetPins';
+import VeedIt from './containers/VeedIt/VeedIt';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/" element={<Home />}>
               <Route path="/project/gpt3" element={<Gpt3 />} />
               <Route path="/project/petpins" element={<PetPins />} />
+              <Route path="/project/veedit" element={<VeedIt />} />
             </Route>
           </Routes>
         </div>
