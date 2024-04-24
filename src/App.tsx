@@ -1,31 +1,18 @@
-import { Route, Routes } from 'react-router-dom';
-import Header from './components/header/Header';
-import Home from './containers/Home/Home';
-import Footer from './components/footer/Footer';
-import Gpt3 from './containers/gpt3/Gpt3';
-import PetPins from './containers/PetPins/PetPins';
-import VeedIt from './containers/VeedIt/VeedIt';
+import { Route, Routes } from "react-router-dom";
+import Home from "./containers/Home";
 
 const App = () => {
-
   // const navigate = useNavigate();
 
   return (
-    <div className='bg-gradient h-full min-h-svh'>
-      <Header />
-      <div className='h-full min-h-svh flex flex-col justify-between'>
-        <div className='h-full my-40'>
-          <Routes>
-            <Route path="/" element={<Home />}>
-              <Route path="/project/gpt3" element={<Gpt3 />} />
-              <Route path="/project/petpins" element={<PetPins />} />
-              <Route path="/project/veedit" element={<VeedIt />} />
-            </Route>
-          </Routes>
-        </div>
-        <div className='relative bottom-0'>
-          <Footer />
-        </div>
+    <div className="h-full min-h-svh">
+      <div className="absolute h-svh w-full bg-foreground"></div>
+      <div className="relative">
+        <Routes>
+          <Route path="/" element={<Home />}>
+            {/* <Route path="/project/gpt3" element={<div />} /> */}
+          </Route>
+        </Routes>
       </div>
     </div>
   );
