@@ -121,11 +121,11 @@
 }
 
 .background-animate {
-  background-size: 400%;
+  background-size: 200%;
 
-  -webkit-animation: gradientMove 30s ease infinite;
-  -moz-animation: gradientMove 30s ease infinite;
-  animation: gradientMove 30s ease infinite;
+  -webkit-animation: gradientMove 60s ease infinite;
+  -moz-animation: gradientMove 60s ease infinite;
+  animation: gradientMove 60s ease infinite;
 }
 
 @keyframes gradientMove {
