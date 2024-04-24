@@ -113,6 +113,11 @@ module.exports = {
           "50%": { transform: "scale(1.1)" },
           "100%": { transform: "scale(1)" },
         },
+        "gradient-move": {
+          "0%": { backgroundPositionX: "0% 50%" },
+          "50%": { backgroundPositionX: "100% 50%" },
+          "100%": { backgroundPositionX: "0% 50%" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -122,6 +127,7 @@ module.exports = {
         shake: "shake 0.5s ease-in-out",
         spin: "spin 2s linear infinite",
         heartbeat: "heartbeat 1s ease-in-out infinite",
+        "gradient-move": "gradient-move 1s linear infinite",
       },
     },
   },

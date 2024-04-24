@@ -8,7 +8,7 @@ const Home = () => {
   const entries = useRef(null);
 
   return (
-    <div className="flex-center h-full min-h-svh flex-col gap-4 scroll-smooth bg-foreground">
+    <div className="flex-center background-animate h-full min-h-svh w-full flex-col gap-4 scroll-smooth bg-gradient-to-r from-foreground to-[#0F0608]">
       <Welcome scrollTo={entries} />
       <div ref={entries} className="w-full">
         <PortfolioList />

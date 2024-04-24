@@ -119,3 +119,21 @@
 * {
   scroll-behavior: smooth;
 }
+
+.background-animate {
+  background-size: 400%;
+
+  -webkit-animation: gradientMove 30s ease infinite;
+  -moz-animation: gradientMove 30s ease infinite;
+  animation: gradientMove 30s ease infinite;
+}
+
+@keyframes gradientMove {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
