@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { LiaLinkedin } from "react-icons/lia";
 import { BsGithub } from "react-icons/bs";
+import { FaFilePdf } from "react-icons/fa";
 
 type PersonalInfoCardProps = {
   scrollTo: React.RefObject<HTMLElement>;
@@ -22,6 +23,16 @@ const PersonalInfoCard = ({ scrollTo }: PersonalInfoCardProps) => {
 
     return () => clearInterval(interval);
   }, [visibilityCount]);
+
+  const downloadPDF = () => {
+    const pdfUrl = "/assets/KrzysztofKutniowskiCV.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "KrzysztofKutniowskiCV.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div
@@ -64,7 +75,7 @@ const PersonalInfoCard = ({ scrollTo }: PersonalInfoCardProps) => {
           src="/assets/Kface.png"
           alt="cool"
           className={cn(
-            "size-[100px] rounded-full",
+            "size-[140px] border-2 border-primary",
             `${visibilityCount > 4 ? `${visibilityCount > 5 ? "hover:animate-heartbeat" : "animate-fadein"}` : "opacity-0"}`,
           )}
         />
@@ -129,6 +140,13 @@ const PersonalInfoCard = ({ scrollTo }: PersonalInfoCardProps) => {
               <BsGithub />
               <p>Github</p>
             </a>
+          </Button>
+          <Button
+            className="flex gap-2  hover:animate-heartbeat"
+            onClick={downloadPDF}
+          >
+            <FaFilePdf />
+            CV
           </Button>
         </div>
       </div>
