@@ -61,10 +61,10 @@ const PersonalInfoCard = ({ scrollTo }: PersonalInfoCardProps) => {
           </p>
         </div>
         <img
-          src="/assets/cool.png"
+          src="/assets/Kface.png"
           alt="cool"
           className={cn(
-            "size-20",
+            "size-[100px] rounded-full",
             `${visibilityCount > 4 ? `${visibilityCount > 5 ? "hover:animate-heartbeat" : "animate-fadein"}` : "opacity-0"}`,
           )}
         />
