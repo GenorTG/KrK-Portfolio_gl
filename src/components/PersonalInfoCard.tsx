@@ -116,7 +116,7 @@ const PersonalInfoCard = ({ scrollTo }: PersonalInfoCardProps) => {
         </p>
         <div
           className={cn(
-            "flex flex-row items-center gap-4",
+            "flex flex-col items-center gap-4 md:flex-row",
             `${visibilityCount > 7 ? "animate-fadein" : "opacity-0"}`,
           )}
         >
