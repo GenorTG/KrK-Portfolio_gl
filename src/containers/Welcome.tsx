@@ -1,15 +1,13 @@
 import PersonalInfoCard from "@/components/PersonalInfoCard";
-import { Button } from "@/components/ui/button";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
 import { cn } from "@/lib/utils";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 type WelcomeProps = {
   scrollTo: React.RefObject<HTMLElement>;
 };
 
 const Welcome = ({ scrollTo }: WelcomeProps) => {
-  useEffect(() => {}, []);
   const ref = useRef() as React.RefObject<HTMLElement>;
   const isVisible = useIsVisible(ref);
 
@@ -21,15 +19,7 @@ const Welcome = ({ scrollTo }: WelcomeProps) => {
       )}
       ref={ref as React.LegacyRef<HTMLDivElement>}
     >
-      <PersonalInfoCard />
-      <Button
-        className="text-2xl"
-        onClick={() =>
-          scrollTo.current?.scrollIntoView({
-            behavior: "smooth",
-          })
-        }
-      >{`Scroll down to see my work`}</Button>
+      <PersonalInfoCard scrollTo={scrollTo} />
     </div>
   );
 };
