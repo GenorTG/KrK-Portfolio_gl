@@ -61,7 +61,7 @@ const Plaid = {
   name: "Plaid",
   icon: (
     <img
-      rel="noreferer"
+      rel="noreferrer"
       className="size-6"
       src="/public/assets/Plaid.png"
       alt="plaid"
@@ -72,7 +72,7 @@ const Dwolla = {
   name: "Dwolla",
   icon: (
     <img
-      rel="noreferer"
+      rel="noreferrer"
       className="size-6"
       src="/public/assets/Dwolla.png"
       alt="dwolla"
