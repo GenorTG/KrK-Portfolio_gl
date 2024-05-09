@@ -11,6 +11,7 @@ import { ReactNode, useRef } from "react";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
 import { cn } from "@/lib/utils";
 import { Ripple, initTWE } from "tw-elements";
+import Horizon from "./Horizon";
 initTWE({ Ripple }, { allowReinits: true });
 
 type Entry = {
@@ -33,6 +34,10 @@ const Entries: Entries = [
     title: "VeedIt - A video conferencing app",
     node: <VeedIt />,
   },
+  {
+    title: "Horizon - A banking and finance app",
+    node: <Horizon />,
+  },
 ];
 
 const PortfolioList = () => {
@@ -48,7 +53,7 @@ const PortfolioList = () => {
       id="entries"
       ref={ref as React.LegacyRef<HTMLDivElement>}
     >
-      <h1 className="bg-primary p-4 text-2xl text-foreground">
+      <h1 className="-mt-4 bg-primary p-4 text-2xl text-foreground">
         Check out my work below
       </h1>
       <div className="flex-center h-fitw-full flex-col">

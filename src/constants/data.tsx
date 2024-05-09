@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { FaReact } from "react-icons/fa";
 import {
+  SiAppwrite,
   SiClerk,
   SiNextdotjs,
   SiSanity,
@@ -51,6 +52,18 @@ const Sanity = {
 const SCSS = {
   name: "SCSS",
   icon: <BsFiletypeScss />,
+};
+const Appwrite = {
+  name: "Appwrite",
+  icon: <SiAppwrite />,
+};
+const Plaid = {
+  name: "Plaid",
+  icon: <img className="size-6" src="/public/assets/Plaid.png" alt="plaid" />,
+};
+const Dwolla = {
+  name: "Dwolla",
+  icon: <img className="size-6" src="/public/assets/Dwolla.png" alt="dwolla" />,
 };
 
 export type WebsiteTypes = "linkedin" | "github" | "website";
@@ -156,4 +169,28 @@ export const veedItDetails: WebsiteProps = {
     },
   ],
   techstack: [Next, ReactTech, Typescript, TailwindCSS, Shadcn, Clerk, Stream],
+};
+
+export const horizonDetails: WebsiteProps = {
+  header: "Horizon",
+  subhead: "An amazing banking app",
+  image: "/assets/horizon.svg",
+  info: [
+    "This is a banking app that you can use to connect your bank accounts and manage your finances.",
+    "The app is built using next JS. It uses Appwrite services for document storage, Plaid for banking authentication and dwolla for a sandbox to play with.",
+    `You can create an account, log in, and add bank accounts. You can use the test credentials on the login screen, or make your own new account. To connect a sandbox fake banking account, insert "user_good" and "pass_good" as your credentials when asked to.`,
+    "You can check your transactions, make new transactions between horizon ID accounts, and see what you spend your money on the most.",
+    "Built using Typescript, Shadcn components library and Tailwind for styles.",
+  ],
+  links: [
+    {
+      link: "https://veed-it.vercel.app/",
+      type: "website",
+    },
+    {
+      link: "https://github.com/GenorTG/banking_jsm",
+      type: "github",
+    },
+  ],
+  techstack: [Next, Dwolla, Typescript, TailwindCSS, Shadcn, Appwrite, Plaid],
 };
