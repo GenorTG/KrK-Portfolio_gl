@@ -64,7 +64,7 @@ const Plaid = {
       crossOrigin="anonymous"
       referrerPolicy="no-referrer"
       className="size-6"
-      src="/public/assets/Plaid.png"
+      src="/assets/Plaid.png"
       alt="plaid"
     />
   ),
@@ -76,7 +76,7 @@ const Dwolla = {
       crossOrigin="anonymous"
       referrerPolicy="no-referrer"
       className="size-6"
-      src="/public/assets/Dwolla.png"
+      src="/assets/Dwolla.png"
       alt="dwolla"
     />
   ),
