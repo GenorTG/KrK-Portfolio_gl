@@ -59,11 +59,25 @@ const Appwrite = {
 };
 const Plaid = {
   name: "Plaid",
-  icon: <img className="size-6" src="/public/assets/Plaid.png" alt="plaid" />,
+  icon: (
+    <img
+      rel="noreferer"
+      className="size-6"
+      src="/public/assets/Plaid.png"
+      alt="plaid"
+    />
+  ),
 };
 const Dwolla = {
   name: "Dwolla",
-  icon: <img className="size-6" src="/public/assets/Dwolla.png" alt="dwolla" />,
+  icon: (
+    <img
+      rel="noreferer"
+      className="size-6"
+      src="/public/assets/Dwolla.png"
+      alt="dwolla"
+    />
+  ),
 };
 
 export type WebsiteTypes = "linkedin" | "github" | "website";
