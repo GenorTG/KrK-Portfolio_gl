@@ -61,6 +61,7 @@ const Plaid = {
   name: "Plaid",
   icon: (
     <img
+      crossOrigin="anonymous"
       referrerPolicy="no-referrer"
       className="size-6"
       src="/public/assets/Plaid.png"
@@ -72,6 +73,7 @@ const Dwolla = {
   name: "Dwolla",
   icon: (
     <img
+      crossOrigin="anonymous"
       referrerPolicy="no-referrer"
       className="size-6"
       src="/public/assets/Dwolla.png"
