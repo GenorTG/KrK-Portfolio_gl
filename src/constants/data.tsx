@@ -184,7 +184,7 @@ export const horizonDetails: WebsiteProps = {
   ],
   links: [
     {
-      link: "https://veed-it.vercel.app/",
+      link: "https://krk-horizon.vercel.app/",
       type: "website",
     },
     {
